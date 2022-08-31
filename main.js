@@ -17,7 +17,6 @@ function readValue() {
 
     let second1 = document.getElementById('second-value').selectedIndex;
     let second2 = document.getElementById('second-value').options;
-
     setAlarm = `${hour2[hour1].text}:${minute2[minute1].text}:${second2[second1].text}`;
 }
 
@@ -27,7 +26,13 @@ function resetValues() {
     document.getElementById('second-value').selectedIndex = null;
     setAlarm = null;
 }
-
+function boshlash(){
+    document.querySelector('audio').play()
+    alert("Budilnik o'rnatildi!!!")
+}
+function tugatish(){
+    document.querySelector('.tugadi').play()
+}
 function checkTimes(i) {
     return (i < 10) ? "0" + i : i;
 }
